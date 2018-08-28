@@ -24,7 +24,7 @@ function dec(n) {
 
 function makeInt(n) {
   if (n instanceof String.class) {
-    return throw 
+    throw new Error("NaN")
   } else {
     return parseInt(n, 10)
   }
