@@ -2,7 +2,7 @@ function add(a, b) {
   return a+b
 }
 
-function subtrace(a,b) {
+function subtract(a,b) {
   return a-b
 }
 
@@ -15,15 +15,15 @@ function divide(a,b) {
 }
 
 function inc(n) {
-  return n++
+  return ++n
 }
 
 function dec(n) {
-  return n--
+  return --n
 }
 
 function makeInt(n) {
-  if (n instanceof String.class) {
+  if (n instanceof String) {
     return NaN
   } else {
     return parseInt(n, 10)
